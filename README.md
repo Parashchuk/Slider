@@ -1,2 +1,2 @@
-# slider
+# Slider
 Reusable slider component written on vanila html css js
