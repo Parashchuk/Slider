@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,4 +8,42 @@ body {
   font-family: 'Muli', sans-serif;
   overflow: hidden;
   margin: 0;
+}
+
+.container {
+  background-color: #1a1a1b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  position: relative;
+  color: white;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  flex: 1;
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.5s ease-in 0.5s;
 }
